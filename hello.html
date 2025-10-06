@@ -8,25 +8,45 @@
     <title>Hotel Management System</title>
 </head>
 <body>
-<label>
-    <input type="checkbox">
-    <div class="toggle">
-        <span class="top_line common"></span>
-        <span class="middle_line common"></span>
-        <span class="bottom_line common"></span>
-    </div>
-    <div class="slide">
-        <h1>Menu</h1>
-        <ul>
-            <li><a href="#"><i class="fas fa-tv"></i>Dashboard</a></li>
-            <li><a href="#"><i class="fa-solid fa-users"></i>Patients</a></li>
-            <li><a href="#"><i class="fa-solid fa-user-doctor"></i>Doctors</a></li>
-            <li><a href="#"><i class="fa-solid fa-clipboard-user"></i>Appointments</a></li>
-            <li><a href="#"><i class="fa-solid fa-file-lines"></i>Medical Record</a></li>
-            <li><a href="#"><i class="fa-solid fa-money-bill"></i>Billing</a></li>
-            <li><a href="#"><i class="fa-solid fa-chart-line"></i>Reports</a></li>
+
+<input type="checkbox" id="menu-toggle">
+
+<div class="container">
+    <nav class="head">
+        <div class="left-section">
+            <label for="menu-toggle" class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </label>
+            <h1 class="heading">MediCare</h1>
+        </div>
+        
+        <div class="slide">
+            <ul>
+                <li><a href="#"><i class="fas fa-tv"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i>Patients</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-doctor"></i>Doctors</a></li>
+                <li><a href="#"><i class="fa-solid fa-clipboard-user"></i>Appointments</a></li>
+                <li><a href="#"><i class="fa-solid fa-file-lines"></i>Medical Record</a></li>
+                <li><a href="#"><i class="fa-solid fa-money-bill"></i>Billing</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-line"></i>Reports</a></li>
+            </ul>
+        </div>
+        
+        <ul class="care">
+            <li>Home</li>
+            <li>Notifications</li>
+            <li>Contact Us</li>
         </ul>
+    </nav>
+    <div class="main-section section-shift">
+    <main>
+        <h2>Welcome to MediCare Hospital Management System</h2>
+        <p>Select an option from the menu to get started.</p>
+    </main>
     </div>
-</label>
+</div>
+
 </body>
 </html>
