@@ -1,52 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Hotel Management System</title>
 </head>
+
 <body>
 
-<input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="menu-toggle">
 
-<div class="container">
-    <nav class="head">
-        <div class="left-section">
-            <label for="menu-toggle" class="toggle">
-                <span class="top_line common"></span>
-                <span class="middle_line common"></span>
-                <span class="bottom_line common"></span>
-            </label>
-            <h1 class="heading">MediCare</h1>
-        </div>
-        
-        <div class="slide">
-            <ul>
-                <li><a href="#"><i class="fas fa-tv"></i>Dashboard</a></li>
-                <li><a href="#"><i class="fa-solid fa-users"></i>Patients</a></li>
-                <li><a href="#"><i class="fa-solid fa-user-doctor"></i>Doctors</a></li>
-                <li><a href="#"><i class="fa-solid fa-clipboard-user"></i>Appointments</a></li>
-                <li><a href="#"><i class="fa-solid fa-file-lines"></i>Medical Record</a></li>
-                <li><a href="#"><i class="fa-solid fa-money-bill"></i>Billing</a></li>
-                <li><a href="#"><i class="fa-solid fa-chart-line"></i>Reports</a></li>
+    <div class="container">
+        <nav class="head">
+            <div class="left-section">
+                <label for="menu-toggle" class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                </label>
+                <h1 class="heading">MediCare <br><span>
+                        <h6>Hospital Management System</h6>
+                    </span></h1>
+            </div>
+
+            <div class="slide">
+                <ul>
+                    <li><a href="#"><i class="fas fa-tv"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-users"></i>Patients</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i>Doctors</a></li>
+                    <li><a href="#"><i class="fa-solid fa-clipboard-user"></i>Appointments</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-lines"></i>Medical Record</a></li>
+                    <li><a href="#"><i class="fa-solid fa-money-bill"></i>Billing</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-line"></i>Reports</a></li>
+                </ul>
+            </div>
+
+            <ul class="care">
+                <li>Home</li>
+                <li>Notifications</li>
+                <li>Contact Us</li>
             </ul>
+        </nav>
+        <div class="main-section section-shift">
+            <main>
+                <div id="dashboard" class="page-active">
+                    <div class="welcome">
+                        <h2>Welcome to MediCare</h2>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h3>Total Patients</h3>
+                                <div class="number">2,847</div>
+                            </div>
+                            <div class="stat-icon blue">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h3>Active Doctors</h3>
+                                <div class="number">48</div>
+                            </div>
+                            <div class="stat-icon green">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h3>Today's Appointments</h3>
+                                <div class="number">156</div>
+                            </div>
+                            <div class="stat-icon purple">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h3>Monthly Revenue</h3>
+                                <div class="number">₹8,45,230</div>
+                            </div>
+                            <div class="stat-icon teal">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointments-section">
+                        <div class="section-header">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Today's Appointments
+                        </div>
+                        <div class="placeholder-content">
+                            <p>Appointment list will be displayed here</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        
-        <ul class="care">
-            <li>Home</li>
-            <li>Notifications</li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
-    <div class="main-section section-shift">
-    <main>
-        <h2>Welcome to MediCare Hospital Management System</h2>
-        <p>Select an option from the menu to get started.</p>
-    </main>
     </div>
-</div>
 
 </body>
+
 </html>
