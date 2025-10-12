@@ -50,7 +50,7 @@ body {
     position: relative;
 }
 
-.heading>span {
+.heading span {
     color: white;
     font-size: 18px;
 }
@@ -394,7 +394,11 @@ td {
     gap: 20px;
     padding: 24px;
 }
-
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .form-group {
     display: flex;
     flex-direction: column;
@@ -440,7 +444,20 @@ td {
     padding: 24px;
     border-top: 1px solid #e5e7eb;
 }
-
+.btn-primary {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background: #2563eb;
+}
 .btn-secondary {
     background: white;
     color: #374151;
@@ -499,4 +516,10 @@ td {
 }
 .page.active{
     display: block;
+}
+tbody tr:hover {
+    background: #f9fafb;
+}
+body.modal-open {
+    overflow: hidden;
 }

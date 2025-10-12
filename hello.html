@@ -8,7 +8,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Hotel Management System</title>
+    <title>Hospital Management System</title>
 </head>
 
 <body>
@@ -24,19 +24,26 @@
                     <span class="bottom_line common"></span>
                 </label>
                 <h1 class="heading">MediCare <br><span>
-                        <h6>Hospital Management System</h6>
+                        Hospital Management System
                     </span></h1>
             </div>
 
             <div class="slide">
                 <ul>
-                    <li><a href="#" class="nav-link active" data-page="dashboard"><i class="fas fa-tv"></i>Dashboard</a></li>
-                    <li><a href="#" class="nav-link active" data-page="patients"><i class="fa-solid fa-users"></i>Patients</a></li>
-                    <li><a href="#" class="nav-link active" data-page="doctors"><i class="fa-solid fa-user-doctor"></i>Doctors</a></li>
-                    <li><a href="#" class="nav-link active" data-page="appointments"><i class="fa-solid fa-clipboard-user"></i>Appointments</a></li>
-                    <li><a href="#" class="nav-link active" data-page="medical-records"><i class="fa-solid fa-file-lines"></i>Medical Record</a></li>
-                    <li><a href="#" class="nav-link active" data-page="billing"><i class="fa-solid fa-money-bill"></i>Billing</a></li>
-                    <li><a href="#" class="nav-link active" data-page="reports"><i class="fa-solid fa-chart-line"></i>Reports</a></li>
+                    <li><a href="#" class="nav-link active" data-page="dashboard"><i class="fas fa-tv"></i>Dashboard</a>
+                    </li>
+                    <li><a href="#" class="nav-link" data-page="patients"><i
+                                class="fa-solid fa-users"></i>Patients</a></li>
+                    <li><a href="#" class="nav-link" data-page="doctors"><i
+                                class="fa-solid fa-user-doctor"></i>Doctors</a></li>
+                    <li><a href="#" class="nav-link" data-page="appointments"><i
+                                class="fa-solid fa-clipboard-user"></i>Appointments</a></li>
+                    <li><a href="#" class="nav-link" data-page="medical-records"><i
+                                class="fa-solid fa-file-lines"></i>Medical Record</a></li>
+                    <li><a href="#" class="nav-link" data-page="billing"><i
+                                class="fa-solid fa-money-bill"></i>Billing</a></li>
+                    <li><a href="#" class="nav-link" data-page="reports"><i
+                                class="fa-solid fa-chart-line"></i>Reports</a></li>
                 </ul>
             </div>
 
@@ -125,13 +132,17 @@
                     <div class="appointments-section">
                         <div class="section-header">
                             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
                             </svg>
                             Patients Management
                         </div>
-                        
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-                            <input type="text" id="patient-search" placeholder="Search patients by name or ID..." style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; width: 300px; font-size: 14px;">
+
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                            <input type="text" id="patient-search" placeholder="Search patients by name or ID..."
+                                style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; width: 300px; font-size: 14px;">
                             <button id="add-patient-btn" class="btn-primary">+ Add New Patient</button>
                         </div>
 
@@ -208,11 +219,13 @@
                                 </div>
                                 <div class="form-group full-width">
                                     <label>Medical History</label>
-                                    <textarea name="medicalHistory" rows="3" placeholder="Previous conditions, allergies, etc."></textarea>
+                                    <textarea name="medicalHistory" rows="3"
+                                        placeholder="Previous conditions, allergies, etc."></textarea>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn-secondary" onclick="closeAddPatientModal()">Cancel</button>
+                                <button type="button" class="btn-secondary"
+                                    onclick="closeAddPatientModal()">Cancel</button>
                                 <button type="submit" class="btn-primary">Add Patient</button>
                             </div>
                         </form>
@@ -223,15 +236,87 @@
                     <div class="appointments-section">
                         <div class="section-header">
                             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
                             Doctors Management
                         </div>
                         <div class="placeholder-content">
                             <h2>Doctors Section</h2>
                             <p>Manage doctor profiles and schedules</p>
-                            <button class="btn-primary">Add New Doctor</button>
+                            <button id="add-doctor-btn" class="btn-primary">Add New Doctor</button>
                         </div>
+                        <table id="doctors-table">
+                            <thead>
+                                <tr>
+                                    <th>Doctor ID</th>
+                                    <th>Name</th>
+                                    <th>Specialization</th>
+                                    <th>Contact</th>
+                                    <th>Email</th>
+                                    <th>Gender</th>
+                                    <th>Experience</th>
+                                    <th>Address</th>
+                                </tr>
+                            </thead>
+                            <tbody id="doctors-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="add-doctor-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Add New Doctor</h2>
+                            <span id="close-doctor-modal" class="close">&times;</span>
+                        </div>
+                        <form id="add-doctor-form" onsubmit="addDoctor(event)">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>First Name *</label>
+                                    <input type="text" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name *</label>
+                                    <input type="text" name="lastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Specialization *</label>
+                                    <input type="text" name="specialization" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Contact Number *</label>
+                                    <input type="tel" name="contact" required pattern="[0-9]{10}">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Gender *</label>
+                                    <select name="gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Experience (years) *</label>
+                                    <input type="number" name="experience" required min="0" max="60">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label>Address</label>
+                                    <textarea name="address" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn-secondary"
+                                    onclick="closeAddDoctorModal()">Cancel</button>
+                                <button type="submit" class="btn-primary">Add Doctor</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
@@ -281,9 +366,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-
             </main>
         </div>
     </div>
